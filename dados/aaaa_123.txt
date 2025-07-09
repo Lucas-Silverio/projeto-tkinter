@@ -1,0 +1,13 @@
+Nome do Cachorro: aaaa
+Cor: aaaa
+Idade: 123 anos
+Raça: aaaa
+Peso: 123.0 kg
+--- Dados do Dono ---
+Nome do Dono: aaaa
+CPF do Dono: 123
+Endereço: aaaa, 123
+Bairro: aaaa
+Cidade: aaaa
+CEP: 123
+Data do Cadastro: 03-07-2025 00:12:08
