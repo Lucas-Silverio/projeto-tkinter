@@ -46,6 +46,7 @@ class PetshopApp():
             resposta = messagebox.askquestion("Deletar",f"Deseja deletar o registro : Cachorro: {selecionado["nome"]}, Dono: {selecionado["nome_dono"]}")
             if resposta == "yes":
                 self.pet_shop_vm.deletar_cachorro_uc(selecionado)
+                messagebox.showinfo("Deletado","Deletado com sucesso.")
                 self.preencher_lista()
     #Chama minha view_model para usar o caso de uso e buscar selecionado 
     def encontrar_item(self):

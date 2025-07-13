@@ -4,6 +4,13 @@ from interfaces.view_model.pet_shop_view_model import PetShopVM
 from dados.repository_simulado import Repository
 from use_case import (atualizar_cachorro, deletar_cachorro,buscar_cachorro,salvar_cachorro)
 
+def centralizar_tela(root,largura,altura):
+    tela_largura = root.winfo_screenwidth()
+    tela_altura = root.winfo_screenheight()
+    #centralizar
+    x = (tela_largura // 2) - (largura // 2)
+    y = (tela_altura // 2) - (altura // 2)
+    root.geometry(f"{largura}x{altura}+{x}+{y}")
 
 if __name__ == "__main__":
     #repository
@@ -20,5 +27,5 @@ if __name__ == "__main__":
     root.resizable(False,False)
     #view
     app = PetshopApp(root,view_model_pet)
-    root.geometry("1050x600")
+    centralizar_tela(root,1050,600)
     root.mainloop()

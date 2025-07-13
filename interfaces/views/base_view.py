@@ -7,7 +7,8 @@ class BaseView(Toplevel,ABC):
         super().__init__(master)
         self.master = master
         self.title('Base')
-        self.geometry('315x450')
+        self.centralizar_tela(315,450)
+        #self.geometry('315x450')
         self.resizable(False,False)
 
         #Configuração Modal
@@ -50,7 +51,13 @@ class BaseView(Toplevel,ABC):
             entry = ttk.Entry(self, font=self.fonte_entry)
             entry.grid(row=i, column=1, padx=self.padding_x, pady=self.padding_y, sticky="ew")
             self.entries[nome_entry] = entry
-
+    def centralizar_tela(self,largura,altura):
+        tela_largura = self.winfo_screenwidth()
+        tela_altura = self.winfo_screenheight()
+        #centralizar
+        x = (tela_largura // 2) - (largura // 2)
+        y = (tela_altura // 2) - (altura // 2)
+        self.geometry(f"{largura}x{altura}+{x}+{y}")
     @abstractmethod
     def enviar(self):
         pass

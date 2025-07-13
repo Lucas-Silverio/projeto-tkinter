@@ -17,7 +17,8 @@ class CadastroView(BaseView):
             for i in self.entries:
                 campos.append(self.entries[i].get())
             self.sv_cachorro_uc.salvar(campos)
+            messagebox.showinfo("Cadastrado","Cadastro realizado com sucesso.")
             self.limpar_campos()
         except ValueError as erro:
-            messagebox.showwarning("Valores inválidos",erro)
+            messagebox.showerror("Ação inválida",erro)
         

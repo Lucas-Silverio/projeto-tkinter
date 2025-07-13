@@ -1,6 +1,5 @@
 import os
 import json
-from model.cachorro import Cachorro
 class Repository():
     def __init__(self):
         self.dados = self.buscar_todos_banco()

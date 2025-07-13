@@ -21,6 +21,7 @@ class AtualizarView(BaseView):
                 else:
                     campos.append(self.entries[i].get())
             self.att_cachorro_uc.atualizar_cachorro(self.selecionado,campos)
+            messagebox.showinfo("Atualizado","Registro atualizado com sucesso.")
         except ValueError as erro:
             messagebox.showerror("Ação inválida",erro)
             

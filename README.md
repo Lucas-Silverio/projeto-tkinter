@@ -6,7 +6,7 @@ Adicionei conceitos de MVVM + clean architectures desenvolvidos por mim, enquant
 Durante essa refatoração, aprendi e apliquei:
 
 - ✅ Princípios do **MVVM**, separando logicamente as camadas de interface, lógica e dados
-- ✅ Como estruturar um projeto com **Clean Architecture** (Domain(Model), Application(Use_case), Infrastructure(Repository), Interface(Views,ViewModels)
+- ✅ Como estruturar um projeto com **Clean Architecture** (Domain(Model), Application(Use_case), Infrastructure(Repository), Interface(Views,ViewModels))
 - ✅ Aplicação de boas práticas como **responsabilidade única**
 - ✅ Validação de dados desacoplada da interface (ViewModel e UseCases)
 - ✅ Organização do código para facilitar manutenção e expansão do projeto
